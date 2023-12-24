@@ -8,7 +8,7 @@ const griddata = [
     id:"1",
     firstname:"Hemant",
     lastname:"kumar",
-    contact:"9415769851",
+    contact:"2525815297",
     city:"Noida",
     country:"India"
   },

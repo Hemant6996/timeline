@@ -127,23 +127,23 @@ function Getupdate() {
             </div> */}
             <h2>Filter</h2>
             <div>
-                <label>Description label</label>
+                <label>Description</label>
                 <input type='checkbox' name='label' onChange={handleChange} defaultChecked />
             </div>
             <div>
-                <label>MAV label</label>
+                <label>Task1 Label</label>
                 <input type='checkbox' name='labelmav' onChange={handlemav} defaultChecked />
             </div>
             <div>
-                <label>PRD label</label>
+                <label>Task2 Label</label>
                 <input type='checkbox' name='labelmav' onChange={handleprd} defaultChecked />
             </div>
             <div>
-                <label>R&D label</label>
+                <label>Task3 Label</label>
                 <input type='checkbox' name='labelmav' onChange={handlerd} defaultChecked />
             </div>
             <div>
-                <label>Solar Panel label</label>
+                <label>Task4 Label</label>
                 <input type='checkbox' name='labelmav' onChange={handlesolar} defaultChecked />
             </div>
 
@@ -154,7 +154,7 @@ function Getupdate() {
                         {                       
                             update.map((item) => {
 
-                                if (item.task === "MAV" && mavlabel) {
+                                if (item.task === "task1" && mavlabel) {
                                     return (<>
                                         <VerticalTimelineElement
                                             key={item.id}
@@ -164,6 +164,9 @@ function Getupdate() {
                                         >
                                             {
                                                 <h3 className='Verticle-timeline-element-title'>{item.task}</h3> 
+                                            }
+                                            {
+                                                <h3 className='Verticle-timeline-element-title'>{item.title}</h3> 
                                             }
                                             {
                                                 label ? <p className='Verticle-timeline-element-title'>{item.description}</p> : null
@@ -177,7 +180,7 @@ function Getupdate() {
                                     )
                                 }
 
-                                if (item.task === "PRD" && prdlabel) {
+                                if (item.task === "task2" && prdlabel) {
                                     return (<>
                                         <VerticalTimelineElement
                                             key={item.id}
@@ -188,6 +191,9 @@ function Getupdate() {
                                             {
 
                                                 <h3 className='Verticle-timeline-element-title'>{item.task}</h3> 
+                                            }
+                                            {
+                                                <h3 className='Verticle-timeline-element-title'>{item.title}</h3> 
                                             }
                                             {
                                                 label ? <p className='Verticle-timeline-element-title'>{item.description}</p> : null
@@ -203,7 +209,7 @@ function Getupdate() {
                                     )
                                 }
 
-                                if (item.task === "RDplatform" && rdlabel) {
+                                if (item.task === "task3" && rdlabel) {
                                     return (<>
                                         <VerticalTimelineElement
                                             key={item.id}
@@ -216,6 +222,9 @@ function Getupdate() {
                                                <h3 className='Verticle-timeline-element-title'>{item.task}</h3> 
                                             }
                                             {
+                                                <h3 className='Verticle-timeline-element-title'>{item.title}</h3> 
+                                            }
+                                            {
                                                 label ? <p className='Verticle-timeline-element-title'>{item.description}</p> : null
                                                 
                                             }
@@ -229,7 +238,7 @@ function Getupdate() {
                                     )
                                 }
 
-                                if (item.task === "SolarPannel" && solarlabel) {
+                                if (item.task === "task4" && solarlabel) {
                                     return (<>
                                         <VerticalTimelineElement
                                             key={item.id}
@@ -242,6 +251,9 @@ function Getupdate() {
                                                <h3 className='Verticle-timeline-element-title'>{item.task}</h3> 
                                             }
                                             {
+                                                <h3 className='Verticle-timeline-element-title'>{item.title}</h3> 
+                                            }
+                                            {
                                                 label ? <p className='Verticle-timeline-element-title'>{item.description}</p> : null
                                                 
                                             }
@@ -254,6 +266,7 @@ function Getupdate() {
 
                                     )
                                 }
+                            
 
                                 
 

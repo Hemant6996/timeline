@@ -25,11 +25,11 @@ function Content() {
              </div>
      <div style={{width:"80%",margin: "50px auto"}}>
   <Row xs={{ cols:2, gutter: 5}} lg={{ cols: 2, gutter: 2}} style={{textAlign:"center"}}>
-  <Col >
-      <div  className="p-2 border rounded  m-2 cont ">
-      Add Update
-        <p><Link to='/addupdate' style={{textDecoration:"none", color:"lightgrey"}}>click here</Link></p>
-      </div>
+  <Col>
+      <div className="p-2 border rounded  m-2 cont">
+        Get Update  
+        <p><Link to='/getupdate' style={{textDecoration:"none", color:"lightgrey"}}>click here</Link></p>
+        </div>
     </Col>
     <Col>
       <div className="p-2 border rounded  m-2 cont">
@@ -37,21 +37,24 @@ function Content() {
         <p><Link  to="/editupdate"  style={{textDecoration:"none", color:"lightgrey"}}>click here</Link></p>
         </div>
     </Col>
-    <Col>
-      <div className="p-2 border rounded  m-2 cont">
-        Get Update  
-        <p><Link to='/getupdate' style={{textDecoration:"none", color:"lightgrey"}}>click here</Link></p>
-        </div>
-    </Col>
+  
+    
+    
     </Row >
     <Row xs={{ cols:2, gutter: 5}} lg={{ cols: 3, gutter: 3}} style={{textAlign:"center"}}>
+    <Col >
+      <div  className="p-2 border rounded  m-2 cont ">
+      Add Update
+        <p><Link to='/addupdate' style={{textDecoration:"none", color:"lightgrey"}}>click here</Link></p>
+      </div>
+    </Col>
     <Col>
       <div className="p-2 border rounded  m-2 cont">
        Gridview
         <p><Link to='/gridview' style={{textDecoration:"none",color:"lightgrey"}}>click here</Link></p>
         </div>
     </Col>
-    <Col>
+    {/* <Col>
     <div className="p-2 border rounded  m-2 cont">
         Project Timeline 
         <p><Link to='/ptimeline'  style={{textDecoration:"none",color:"lightgrey"}}>click here</Link></p>
@@ -62,7 +65,7 @@ function Content() {
         Add Project Timeline 
         <p><Link to='/addptimeline'  style={{textDecoration:"none",color:"lightgrey"}}>click here</Link></p>
       </div>
-    </Col>
+    </Col> */}
     </Row>
     
     </div>

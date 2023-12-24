@@ -186,10 +186,10 @@ const handleupdate = ()=>{
                 <label className="form-label"> Select Task Catagory &nbsp;</label>
                 <select name="task" value={detail.task} onChange={handlechange}>
                         <option>Open this select menu</option>
-                        <option value="MAV">MAV</option>
-                        <option value="RDplatform">R&D</option>
-                        <option value="PRD">PRD</option>
-                        <option value="SolarPannel">Solar Pannel</option>
+                        <option value="task1">Task 1</option>
+                        <option value="task2">Task 2</option>
+                        <option value="task3">Task 3</option>
+                        <option value="task4">Task 4</option>
                 </select>
                 </div>
                 
